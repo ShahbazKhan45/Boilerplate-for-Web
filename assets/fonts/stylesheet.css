@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Myriad';
+    src: url('Myriad-Roman.woff2') format('woff2'),
+        url('Myriad-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

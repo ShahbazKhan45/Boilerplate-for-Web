@@ -1,0 +1,586 @@
+@font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/Myriad-Roman.woff2') format('woff2'),
+        url('../fonts/Myriad-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Hover Start ================================*/
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+    outline: none !important;
+    text-decoration: none !important;
+    color: #f5f6ff;
+    transition: auto;
+}
+
+.input-control:hover,
+.input-control:focus {
+    background-color: #fff !important;
+    transition: 0.7s all;
+}
+
+.btn.btn_submit:hover {
+    background: linear-gradient(66deg, #3c3f78 16%, #b6b6dc 80%) !important;
+    color: #fff;
+    transition: 0.4s all;
+    box-shadow: 1px 2px 10px #3c3f78 !important;
+}
+
+.copyright a:hover {
+    color: #fff;
+}
+
+/* Hover End ================================*/
+
+section {
+    padding: 40px 0;
+    position: relative;
+    clear: both;
+    scroll-behavior: smooth !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+btn {
+    font-family: 'Myriad';
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    font-size: 16px;
+    color: #616160;
+}
+
+
+/*Mobile Screen viewport ================================*/
+
+.mobile-screen {
+    display: none;
+}
+
+#cross {
+    display: none;
+}
+
+
+/* Admin Pannel */
+
+.addmobile-screen {
+    display: none;
+}
+
+#addcross {
+    display: none;
+}
+
+a#addlist-btn {
+    display: none !important;
+}
+
+    /* Admin Pannel End ================================*/
+    
+
+/*End Mobile Screene ================================*/
+
+
+/* Poooosition fixed============================================================ */
+.nav-bar {
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.nav-bar ul.menu li {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.nav-bar ul.menu {
+    padding: 10px;
+    text-align: right;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    position: relative;
+}
+
+.nav-bar ul.menu li a {
+    font-size: 15px;
+    color: #747474;
+    font-weight: 600;
+    font-family: 'Myriad Pro';
+    /* text-transform: uppercase; */
+    position: relative;
+}
+
+/* Dropdown List Start */
+
+/*.nav-bar ul.menu.dropdown {
+    display: none;
+}
+
+ header nav ul li.dropdown:hover .dropdown-menu {
+    position: absolute;
+    z-index: 100 !important;
+    transform: scale(1);
+    top: 35px;
+    left: -24px;
+    background: #6e6eb1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header nav ul li .dropdown-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 300%;
+    transform: scale(0);
+    transition: .5s all;
+    z-index: 10000;
+}
+
+header nav ul li.dropdown {
+    position: relative;
+    visibility: visible;
+    z-index: 100 !important;
+}
+
+header nav ul li .dropdown-menu a {
+    padding: 7px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    transition: .5s all;
+    z-index: 100 !important;
+}
+
+header nav ul li .dropdown-menu a:hover {
+    position: relative;
+    visibility: visible;
+    z-index: 100 !important;
+    background: #6e6eb1;
+    box-shadow: 4px 3px 8px #adabd6;
+}
+
+header nav ul li .dropdown-menu a:hover::before {
+    display: none;
+} */
+
+/* Dropdown List end*/
+
+
+/* Header Fixed Position */
+
+
+/* End Header Fixed Position */
+
+.nav-bar a.logo img {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+header {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.nav-bar ul.menu li a.active::before {
+    content: "";
+    height: 2px;
+    background: #adabd6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    transition: width 0.5s !important;
+    width: 100%;
+    animation: fill 1s forwards;
+    color: #606060 !important;
+}
+
+.nav-bar ul.menu li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #b51a20;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    transition: width 0.5s !important;
+}
+.nav-bar ul.menu .social-icons-nav li a::before {
+    background: none !important;
+}
+.nav-bar ul.menu li a:hover::before {
+    width: 100%;
+    animation: fill 1s forwards;
+    color: #b51a20 !important;
+}
+.nav-bar ul.menu .social-icons-nav {
+    display: inline-block;
+    padding: 0 5px;
+}
+.nav-bar ul.menu li a:hover,
+.nav-bar ul.menu li a:focus,
+button:hover,
+button:focus {
+    color: #b51a20 !important;
+    background: none !important;
+}
+.nav-bar ul.menu li i.fab {
+    padding: 9px 12px;
+    border-radius: 30px;
+    font-size: 17px;
+    margin: 0 -12px 0;
+    color: #fff !important;
+}
+
+.nav-bar ul.menu li i.fab.fa-facebook-f {
+    background: #366ab1;
+}
+
+.nav-bar ul.menu li 
+ i.fab.fa-linkedin-in {
+    background: #2c91cf;
+    padding: 9px 10px;
+}
+
+.nav-bar ul.menu 
+ i.fab.fa-twitter {
+    background: #2c91cf;
+    padding: 10px;
+}
+
+.nav-bar ul.menu li a.btn:hover::before {
+    display: none;
+}
+
+.soical-icons-nav .nav-bar ul.menu li a:hover::before {
+    display: none !important;
+}
+
+/* Form ================================*/
+
+.form-parent {
+    position: relative;
+    padding: 0rem 0;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.pWater {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+    z-index: 0;
+    box-shadow: 7px 1px 8px #ccc;
+}
+
+.form-parent h2,
+.web-tabs h2 {
+    color: #3c3f78;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Myriad Pro';
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+.form-parent p {
+    color: #747474;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 0 30px;
+}
+
+.form-parent p span {
+    font-weight: 500;
+    color: #3c3f78;
+}
+.form-parent .main-form form {
+    padding: 20px;
+    box-shadow: 1px 1px 12px #ccc;
+}
+.form-parent .main-form input.input-control {
+    font: -webkit-control;
+    width: 100%;
+    font-family: 'Myriad Pro';
+    display: block;
+    color: #848484;
+    background: #f3f3f3;
+    border: 1px solid #e2e0e0;
+    margin: 12px 0;
+    padding: 18px 13px 9px;
+    min-height: 40px;
+    outline: 0;
+}
+
+.form-parent.login .main-form input.input-control::placeholder {
+    font-size: 15px !important;
+    font-family: 'Myriad Pro';
+}
+
+.form-parent.register .main-form input.input-control::placeholder,
+input.required.input-control.form-control.colorType::placeholder {
+    font-size: 13px !important;
+}
+
+p.reg {
+    font-size: 15px;
+}
+p.reg span {
+    display: inline;
+}
+
+.btn.btn_submit {
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    border: solid 1px #00A0DA;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    padding: 7px 25px;
+    background: linear-gradient(71deg, #b6b6dc 16%, #3C3F76 16%) !important;
+}
+
+select#Reffrence {
+    width: 96.7%;
+}
+
+textarea.required.input-control.form-control {
+    resize: none;
+    margin: 4px;
+    width: 96.6%;
+    height: 90px;
+    background: #f3f3f3;
+    font-size: 13px;
+}
+
+
+/* Validation ================================*/
+
+input.required.error,
+textarea.required.error,
+select.required.error {
+    border: 1.5px solid red!important;
+}
+
+label.error {
+    display: none !important;
+}
+
+
+/*End Form  */
+
+.copyright {
+    position: relative;
+    padding: 10px 0;
+    background: #6985f9;
+    z-index: 1;
+}
+
+a#goto-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #6e6eb1;
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+    border-radius: 50px;
+    z-index: 999;
+    transition: 0.5s all !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+a#goto-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+a#goto-top:hover {
+    transform: scale(0.9);
+}
+
+h1 {
+    color: #fff;
+    text-align: left;
+    font-size: 65px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0px;
+    font-family: 'Bahnschrift';
+    line-height: 60px;
+}
+h1 span {
+    display: block;
+    line-height: 50px;
+}
+
+/* Footer */
+
+footer {
+    background: rgb(92, 92, 229);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding: 170px 0 0;
+}
+footer ul.menu li.f-logo {
+    position: absolute;
+    top: -110px;
+    left: 30px;
+}
+footer ul.menu li a:hover,footer ul.menu li a:active {
+    color: #fff !important;
+}
+
+footer ul.menu li a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Myriad Pro';
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+    letter-spacing: 0px;
+}
+.copyright.admin {
+    background: #3c3f78;
+    text-align: center;
+}
+.copyright {
+    padding: 15px 0;
+    margin-top: 30px;
+    position: relative;
+    background: transparent;
+}
+
+.copyright ul.menu li a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.f-icons {
+    position: absolute;
+    padding: 8px 0;
+    left: -10px;
+}
+
+/*  */
+
+
+
+.copyright a {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Myriad Pro';
+    line-height: 50px;
+}
+
+.copyright p,
+.copyright p a {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+footer ul.menu.f-social-icons li {
+    display: inline-block;
+    padding: 0 7px 5px;
+}
+
+footer ul.menu.f-social-icons span li a i {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+footer ul.menu.f-social-icons span {
+    display: block;
+}
+
+footer ul.menu.f-social-icons span li a {
+    font-size: 15px;
+    color: #fff;
+}
+
+footer .social-links li a i {
+    font-size: 20px !important;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+footer .social-links li a i.fab.fa-twitter {
+    background: #2e92d1;
+}
+
+footer .social-links li a  i.fab.fa-linkedin-in {
+    background: #2e92d1;
+}
+
+footer .social-links li a i.fab.fa-facebook-f {
+    background: #376ab2;
+    padding: 8px 11px;
+}
+
+footer .social-links {
+    padding: 10px 0;
+}
+/* Footer end */
+
+.copyright::before {
+    content: "";
+    background: #b1acc8;
+    width: 60%;
+    height: 1.5px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h2 {
+    color: #3c3f78;
+    font-size: 45px;
+    letter-spacing: 0px;
+    margin: 0;
+}
